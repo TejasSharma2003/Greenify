@@ -1,0 +1,122 @@
+.signup {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    display: inline-block;
+    outline: none;
+    flex: 0 1 50%;
+    background-color: #eee;
+    border: none;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 1.5rem 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &:focus {
+      outline: 1px solid var(--priamry-color);
+    }
+  }
+
+  &__btn {
+    background-color: var(--secondary-color);
+    outline: none;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    padding: 1.5rem 0;
+    border-radius: 50px;
+    cursor:pointer;
+    transition:all .2s;
+
+    &:hover
+    {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &__pic-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 0.6);
+      //   animation: increasebg 1s 1s;
+      z-index: 5;
+      border-radius: 10px;
+    }
+
+    & > img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+  }
+
+  &__punch-line {
+    font-size: 5rem;
+    font-weight: 800;
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+@keyframes increasebg {
+  0% {
+    background-color: rgba(orangered, 0);
+  }
+  100% {
+    background-color: rbba(orangered, 0.5);
+  }
+}
+
+.form__switch {
+  display: flex;
+  font-size: 2rem;
+  margin-bottom:3rem;
+  cursor:pointer;
+}
+
+.form__tab {
+  &--active {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  &:not(&:last-child) {
+    margin-right: 5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.facts {
+  // background-color: orangered;
+  background-image: linear-gradient(
+      to right,
+      rgba(#03c988, 0.5),
+      rgba(#9ec775, 0.5)
+    ),
+    url("../../assets/fact-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 18rem 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  &__outlet-image
+  {
+    position: absolute;
+    max-width: 40rem;
+    height: auto;
+    left:-5rem;
+    bottom:0rem;
+
+  }
+
+  &__heading {
+    font-size: 4rem !important;
+    text-transform: capitalize;
+    color:#fff;
+    margin-bottom: 1rem;
+  }
+
+  &__para {
+    font-size: 2rem;
+  }
+}

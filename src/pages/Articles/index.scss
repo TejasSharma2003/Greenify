@@ -1,0 +1,33 @@
+.article {
+  &__container {
+    border: 1px solid #eee;
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto;
+    min-height: 25rem;
+    padding:1rem 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__box {
+    font-size: 2rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: absolute !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    padding:.1rem 2.5rem !important;
+    border:1px solid var(--secondary-color);
+    background-color: transparent;
+
+  }
+
+  &--fade
+  {
+    color:#8d8d8d;
+  }
+}

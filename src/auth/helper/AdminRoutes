@@ -1,0 +1,23 @@
+  <Sidebar
+  
+      routes={routes}
+      logoText={"ClassReady"}
+      logo={logo}
+      image={image}
+      handleDrawerToggle={handleDrawerToggle}
+      open={mobileOpen}
+      color={color}
+      {...rest}
+    />
+    <div className={classes.mainPanel} >
+      <Navbar
+        routes={routes}
+        handleDrawerToggle={handleDrawerToggle}
+        {...rest}
+      />
+      
+      <div className={classes.content}>
+      <div className={classes.container}>{switchRoutes}</div>
+    </div>
+    
+    </div>
